@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+<title>Chelsea Ip Tze Hwan 叶赐欢 </title>
+<meta charset="UTF-8">
+<meta name="description" content="Personal Website">
+<meta name="author" content="Chelsea Ip">
+<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes" />
+<link href="dist/magnific-popup.css?v=0.9.8" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+     <!-- probably other scripts here -->
+     <link rel="stylesheet" href="css/navbar.css">
+    
+     <!-- here is the library link -->
+     <script src="jquery-3.4.0.min.js"></script>
+     
+     <!-- below will go our script -->
+     <script src="scripts/navbar.js"></script>
+</head>
+
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Karla", sans-serif, monospace
+    }
+
+    body {
+        color: #333333;
+        font-family: 'Karla', sans-serif;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 20px
+    }
+
+    #header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+        background-color: #fafafa;
+        line-height: 100px;
+        font-size: 15px;
+        z-index: 1000;
+    }
+
+    #me {
+
+        font-size: 14px;
+        text-align: left;
+        line-height: 24px;
+        text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        background-color: #e8f1f0;
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+    }
+
+    div {
+        display: block;
+    }
+
+    a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .skill {
+        border: 1px solid #50a9d1;
+        margin-right: 10px;
+        text-transform: uppercase;
+        font-weight: 500;
+        width: auto;
+        display: inline-block;
+        font-size: 11px;
+        line-height: 1.33333em;
+        padding: 7px 19px;
+        margin-top: 0.8em;
+        border-radius: 8px;
+
+    }
+
+    .grid-container {
+        font-family: 'Montserrat', sans-serif;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: #e8f1f0;
+        padding: 30px;
+    }
+
+    .grid-item {
+        color: #333333;
+        font-family: 'Montserrat', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        background-color: #e8f1f0;
+
+        padding: 20px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    #footer {
+        background: #fafafa;
+        min-height: 50px;
+        text-align: left;
+        color: #b1b1b1;
+        padding-top: 20px;
+        font-size: 12px;
+        line-height: 20px
+    }
+
+    .inner {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .tagline {
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 0.3em;
+        font-weight: 700;
+        padding-bottom: 50px;
+        font-size: 11px;
+        text-transform: uppercase;
+    }
+
+    #about {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        padding: 155px;
+        text-align: left;
+        line-height: 24px;
+        text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        background-color: #f8e9e6;
+        padding-top: 100px;
+        padding-bottom: 150px;
+
+    }
+
+    li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+
+    #illustration {
+
+        width: 100%;
+        padding-top: 150px;
+        padding-bottom: 50px;
+        text-align: right;
+    }
+
+    #resume {
+
+        height: auto;
+        margin-top: -30px;
+        padding-top: 60px;
+        font-size: 14px;
+        line-height: 34px;
+        text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    #work {
+        background: #eee;
+        height: auto;
+        margin-top: -30px;
+        text-align: center;
+        padding: 60px 0 60px 0;
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    a {
+        color: #333;
+    }
+
+    a img {
+        border: none;
+    }
+
+    .portfolio-big {
+        width: 95%;
+        height: 680px;
+    }
+
+    .portfolio-thumb {
+        width: 45%;
+        margin: 20px;
+        background-color: white;
+        display: inline-block;
+    }
+
+    .portfolio-thumb a {
+        text-decoration: underline
+    }
+
+    .potfolio-thumb p {
+        font-size: 14px;
+        padding: 25px;
+        padding-top: 0px;
+        text-align: left;
+        line-height: 24px;
+    }
+
+    .portfolio-thumb img {
+        width: 75%;
+    }
+
+    p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    b {
+        font-weight: bold;
+    }
+
+    .section-tagline {
+
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 0.3em;
+        font-weight: 700;
+        padding-bottom: 20px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #CEC8C8;
+        font-size: 11px;
+        text-transform: uppercase;
+
+    }
+
+    .right {
+        float: right;
+    }
+
+    .row {
+        clear: both;
+    }
+
+
+    img.icon {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        float: left;
+        display: block;
+        margin-left: -95px;
+        margin-top: 5px;
+        background-color: #fff;
+        opacity: 0.8;
+        z-index: 0;
+
+    }
+
+    a img {
+        border: none;
+    }
+
+    a:-webkit-any()-link {
+        cursor: pointer;
+    }
+
+    a.toc-link {
+        color: #ccc;
+        position: relative;
+        display: block;
+        z-index: 1000;
+        min-width: 200px;
+        height: 40px;
+        line-height: 40px;
+        padding-right: 30px;
+        padding-top: 24px;
+        width: 100%;
+        background: #fafafa;
+    }
+
+    a.-webkit-any-link {
+        cursor: pointer;
+    }
+
+    .toc-holder {
+        position: fixed;
+        right: 0;
+    }
+
+    .toc-holder {
+        text-align: right;
+        z-index: inherit 3000;
+    }
+
+    .toc holder a {
+        text-decoration: none;
+    }
+
+
+    element.style {
+        top: -310px;
+    }
+
+    ul {
+        font-family: 'Montserrat', sans-serif;
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+
+    ul.toc {
+        -webkit-padding-start: 0px;
+    }
+
+    .toc {
+
+        position: absolute;
+        z-index: 10;
+        text-align: center;
+        opacity: 0.5;
+        right: 0px;
+        background: #fafafa;
+        width: auto;
+        padding-top: 60px;
+
+    }
+
+    .toc-h1,
+    .toc-h1 ul {
+        list-style: none;
+        margin: 50px;
+        padding: 0;
+        width: auto;
+
+    }
+
+    .toc-link span {
+        font-size: 30px;
+        margin-right: 70px;
+        display: inline-block;
+        -webkit-transition: -webkit-transform .4s ease;
+        -moz-transition: -moz-transform .4s ease;
+        -o-transition: -o-transform .4s ease;
+        -ms-transition: -ms-transform .4s ease;
+        transition: transform .4s ease;
+    }
+
+    nav {
+        width: 100vw;
+        background-color: #D6EFFF;
+    }
+</style>
+
+</html>
+
+
+<body class>
+    <!-- Navigation -->
+    <div id="toc-holder" class="toc-holder">
+        <a href="#" class="toc-link" id="toc-link" style="top: -310px;">
+            <span>&#9776;</span>
+        </a>
+        <ul id="toc" class="toc">
+            <li class="toc-h1"><a href="#about">Summary</a></li>
+            <li class="toc-h1"><a href="#resume">Résumé</a></li>
+            <li class="toc-h1"><a href="#me">About Me</a></li>
+        </ul>
+    </div>
+
+
+    <div id="page-wrapper">
+        <!-- Header -->
+        <div id="header">
+            <div class="inner name">
+                <a href="#illustration">叶赐欢 | Chelsea Ip</a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="illustration">
+        <center>
+            <img src="images/heyyy.png" height= 400px width= 400px>
+        </center>
+    </div>
+
+
+    <!-- About Section -->
+    <div id="about">
+        <p class="tagline">Summary</p>
+        <center>
+            <p>
+                A rising senior from University of Washington regarded for
+                experience in project development with a
+                focus on software engineering, designing and developing business applications. Exemplary qualifications,
+                with internship experience as a back-end engineer and mobile application developer.
+                After graduation, I will be working at ADP full time as a software developer.
+
+                At University of Washington, I serve as a tri campus vice president for UW Block chain where I develop,
+                organize, and lead Computer Science outreach efforts. My main focus is business strategy
+                - where I explore
+                methods with Fortune 500 companies to provide students, resources for weekly panelist talks,
+                conferences, hackathons, and business events. Through this role, I am able to empower
+                others to do their best as well as increase the number of women in the block chain industry.
+
+                I enjoy working with people, as well as solving open ended problems.
+                 </p>
+            </center>
+                
+           
+           
+    </div>
+    <div id="resume">
+        <div class="inner">
+
+            <p class="tagline">Resume</p>
+            <p class="section-tagline" style="text-align:left;">Education</p>
+            <ol>
+                <a target="_blank" href="http://www.washington.edu/"></a>
+                <img class="icon" src="images/UW.png">
+                <b>UNIVERSITY OF WASHINGTON</b>
+                <span class="right">
+                    <i>2018 - 2020</i>
+                </span>
+                <br><b>
+
+                    Relevant Coursework</b>
+                </br>
+                <ul style="list-style:circle;">
+                    <li>Information Management and Analysis</li>
+                    <li>Data Structures, Algorithms and Discrete Mathematics I</li>
+                    <li>Data Structures, Algorithms and Discrete Mathematics II </li>
+                    <li>Operating Systems</li>
+                    <li>Hardware Computer Organization</li>
+                    <li>Management Principles for Computing Professionals</li>
+                    <li>Database Systems</li>
+                    <li>Interactive Game Design</li>
+                    <li>Cloud Computing</li>
+                    <li>Web Programming and Applications</li>
+                    <li>Software Project Management</li>
+                    <li>Programming Issues with Object Oriented Programming Languages</li>
+                    <li>Software Engineering</li>
+                    <li>Analysis and Design</li>
+                </ul>
+                <span class="skill">C#/C++</span>
+                <span class="skill">Java</span>
+                <span class="skill">R</span>
+                <span class="skill">Python</span>
+                <span class="skill">Javascript</span>
+                <span class="skill">SQL</span>
+                <br></br>
+
+                <p class="section-tagline" style="text-align:left;">Work Experience</p>
+                <a target="_blank" href="https://www.linkedin.com/company/adp/"></a>
+                <img class="icon" src="images/ADP.png">
+                </a>
+                <b> AUTOMATIC DATA PROCESSING (ADP)</b>
+                <span class="right">
+                    <i>August 2020</i>
+                </span>
+                <br>
+                <b>Full Time Software Engineer</b>
+                <br>
+                <ul>
+                    <li>My role will act as a primary, dedicated technology interface owning the technical
+                        responsibility for
+                        architecture, analysis, design, development, and implementation of responsive user interface.
+                    </li>
+                </ul>
+                <br>
+                <a target="_blank" href="https://medintellibase.com/"></a>
+                <img class="icon" src="images/Screen Shot 2020-01-22 at 9.31.02 PM.png">
+                <b> MEDINTELLIBASE® INTELLIGENCE SOLUTIONS</b>
+                <span class="right">
+                    <i>May 2019 - Dec 2019</i>
+                </span>
+                <br>
+                <b>Software Engineer Intern</b>
+                <br>
+                <ul>
+                    <li>Worked with App team to use Azure Notification Hubs and Firebase server to send customers push
+                        notifications across iOS/Android platforms.</li>
+                    <li>Redesigned web templates on the automation website (UI) and increased search tool features.</li>
+                    <li>Implemented and deployed an abstract automation system to allow content managers increase
+                        throughput and efficiency by 95%.</li>
+                    <li>Performed code migration to refine the software from Python 2.7 to Python 3.5, in order to align
+                        with the timing of new prospective clients. </li>
+                    <li>Collaborated with Technical Lead and project team members daily on project progress and status.
+                    </li>
+                </ul>
+                <br>
+                <span class="skill">Python</span>
+                <span class="skill">C#</span>
+                <span class="skill">Django</span>
+                <span class="skill">Mobile Development</span>
+                <span class="skill">Javascript</span>
+                <span class="skill">HTML5/CSS</span>
+                <br></br>
+
+                <a target="_blank" href="https://www.linkedin.com/company/adp/"></a>
+                <img class="icon" src="images/UW.png">
+                </a>
+                <b> UWB BIOCOMPUTING LAB</b>
+                <span class="right">
+                    <i>Nov 2019</i>
+                </span>
+                <br>
+                <b>Undergraduate Researcher</b>
+                <br>
+                <ul>
+                    <li>Applied Machine Learning in Python on GPU enabled Brain Grid Neural Simulator to stimulate
+                        10,000 neurons and observe patterns of spikes.</li>
+                    <li>Utilized Linear, Lasso, Ridge regression and artificial neural networks to predict burst origin
+                        to avoid imbalanced data sets.</li>
+                    <li>Decision Tree (DT) and Support Vector Machine (SVM) were used to see if pre-burst precursor is predictive of burst initiation. </li>
+                </ul>
+                <span class="skill">Python</span>
+                <span class="skill">Machine Learning</span>
+                <br></br>
+
+                <b>GREEN GUIDE INC.</b>
+                <a target="_blank" href="https://www.linkedin.com/company/greenguide/about/"></a>
+                <img class="icon" src="images/green guide.png">
+                <span class="right">
+                    <i>May 2019 - Dec 2019</i>
+                </span>
+                <br>
+                <b>Mobile Developer Intern</b>
+                <br>
+                <ul>
+                    <li>Provided 100+ consumers and producer markets access to high-quality, real-time information
+                        regarding the environmental performance of product suppliers and supply chains by deploying beta
+                        version of the app to Google Play Store.</li>
+                    <li>Handled the tasks of validating bugs and tested beta versions in various mobile application
+                        platforms.</li>
+                    <li>Worked closely with web application development team to ensure proper integration between the
+                        mobile application and web application.</li>
+                </ul>
+                <span class="skill">Java</span>
+                <span class="skill">Mobile Development</span>
+                <span class="skill">Android Studio</span>
+                </ul>
+
+                <br></br>
+
+                <b>HUMPBACK WHALE SOCIAL CALL</b>
+                <a target="_blank" href="https://www.linkedin.com/company/greenguide/about/"></a>
+                <img class="icon" src="images/Humpback Whale Social Call Mascot.jpg">
+                <span class="right">
+                    <i>May 2019 - Dec 2019</i>
+                </span>
+                <br>
+                <b>Front End Developer</b>
+                <br>
+                <ul>
+                    <li>A web application that biologists can use to consolidate and to track data about humpback whales
+                        and other marine mammals. These data include media files and source codes that biologists use
+                        for their research.
+                        This is a non-profit project dedicated for educational and research purposes.</li>
+                    <li>Configured frontend tools and repository with Vue.js, Envoy Proxy and grpcWeb</li>
+                    <li>Performed code reviews to ensure code quality</li>
+
+                </ul>
+                <span class="skill">Vue.js</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">Javascript</span>
+                <span class="skill">GIT</span>
+                <span class="skill">Webstorm</span>
+
+                </ul>
+
+
+        </div>
+    </div>
+    <br></br>
+
+    <div id="me">
+       
+            <p class="tagline">About Me</p>
+
+            <div class="grid-container">
+
+                <div class="grid-item">
+                    <center>
+                        <img src="images/outline_favorite_border_black_18dp.png">
+                    </center>
+                    <p><b>My Myres-Brigg Type Indicator(MBTI) is ISTP. </b><br/>
+                    I enjoy exploring ideas through creating,<br/>
+                    troubleshooting, trial and error<br/>
+                    and first-hand experience. The favorite type of  <br/>
+                    people I supposedly share my personality type with<br/>
+                    are Michael Jordan,Tom Cruise and James Bond.</p></div>
+               
+              
+                <div class="grid-item">
+                    <center>
+                        <img src="images/outline_face_black_18dp.png">
+                    </center>
+                    <p><b>In my free time, I like to....</b><br/>
+                    participate in cooking competitions, try new<br/>
+                    cuisines, explore creative ideas and meet <br/>
+                    new people through hackathons in Seattle! <br/>
+                    Check out some of my cooking tutorials <a  href = "https://www.instagram.com/hersavorytaste/" <br/>
+                    target <i>here!</i></a> <br/>
+                    </p></div>
+
+                <div class="grid-item">
+                    <center>
+                        <img src="images/outline_school_black_18dp.png">
+                    </center>
+                    <p><b>What got me into Computer Science </b><br/>
+                    was my curiousity for E-commerce Database Design.<br/>
+                    After processing orders back and forth, I <br/>
+                    quickly discovered the purpose of automating tasks to <br/>
+                    track inventory in my physical warehouse.<br/></p></div>
+                <div class="grid-item">
+                    <center>
+                        <img src="images/outline_school_black_18dp.png">
+                    </center>
+                    <p><b>My favorite programming language </b><br/>
+                    is Javascript.<br/>
+                    It started back in high school when I found a passion<br/>
+                    for selling apparel online. Lots of people <br/>
+                    are Michael Jordan,Tom Cruise and James Bond.</p></div>
+
+                    <div class="grid-item">
+                        <center>
+                            <img src="images/outline_school_black_18dp.png">
+                        </center>
+                            <p><b>What got me into Computer Science was </b><br/>
+                            my curiousity for E-commerce Database Design.<br/>
+                            It started back in high school when I found a passion<br/>
+                            for selling apparel online. Lots of people <br/>
+                            are Michael Jordan,Tom Cruise and James Bond.</p></div>
+
+                        <div class="grid-item">
+                            <center>
+                                <img src="images/outline_school_black_18dp.png">
+                            </center>
+                            <p><b>What got me into Computer Science? </b><br/>
+                            my curiousity for E-commerce Database Design.<br/>
+                            It started back in high school when I found a passion<br/>
+                            for selling apparel online. Lots of people <br/>
+                            are Michael Jordan,Tom Cruise and James Bond.</p></div>
+                
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <div id="footer">
+        <div class="inner">
+            Made with <3 by Chelsea Ip 2020 <span class="right">
+                <a target="_blank" href="mailto:chels98@uw.edu">Email</a>&nbsp;
+                <a target="_blank" href="https://github.com/ipchelsea">GitHub</a>&nbsp;
+                <a target="_blank" href="https://www.linkedin.com/in/ipchelsea/">LinkedIn</a>&nbsp;&nbsp;
+                </span>
+        </div>
+    </div>
+</body>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+    /* function called when you click of the button */
+    $("button").click(function(){
+        
+        /* this if else to change the text in the button */
+        if($("button").text() == "☰"){
+        $("button").text("🞬");
+        }else{
+            $("button").text("☰");
+        }
+        
+        /* this function toggle the visibility of our "li" elements */
+        $("li").toggle("slow");
+        });
+    });
+
+</script>
