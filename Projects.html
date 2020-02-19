@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="css/navbar.css">
 
     <!-- here is the library link -->
-    <script src="jquery-3.4.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
 
     <!-- below will go our script -->
     <script src="scripts/navbar.js"></script>
@@ -495,6 +496,31 @@
         background-color: #fbd87f;
 
     }
+/* Lawrence added this start */
+#nav-symbol {
+    cursor: pointer;
+    padding: 2px;
+    position: absolute;
+    left: 86%;
+    top: 0%;
+}
+
+.line {
+    background-color: white;
+    height: 3px;
+    margin: 5px;
+    width: 26px;
+}
+
+    .slide-right {
+        right: 0;
+    }
+
+    .slide-left {
+        right: -200px;
+    }
+
+    /* end */
 </style>
 
 </html>
@@ -506,7 +532,7 @@
         <a href="#" class="toc-link" id="toc-link" style="top: -310px;">
             <span>&#9776;</span>
         </a>
-        <ul id="toc" class="toc">
+        <ul id="toc" class="toc slide-right">
             <li class="toc-h1"><a href="#about">Summary</a></li>
             <li class="toc-h1"><a href="#resume">Résumé</a></li>
             <li class="toc-h1"><a href="#me">About Me</a></li>
@@ -520,8 +546,13 @@
             <div class="inner name">
                 叶赐欢 | Chelsea Ip
             </div>
-
-
+            <!-- lawrence added start -->
+            <div id="nav-symbol">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <!-- end -->
         </div>
     </div>
 
@@ -823,8 +854,16 @@
 </div>
 
 <script type="text/javascript">
+// lawrence added start --------------------------------------------------
+    $('#nav-symbol').click(function () {
 
-
+            if ($('#toc').hasClass('slide-right')) {
+                $('#toc').removeClass('slide-right').addClass('slide-left');
+            } else if ($('#toc').hasClass('slide-left')) {
+                $('#toc').removeClass('slide-left').addClass('slide-right');
+            }
+        })
+// end -------------------------------------------------------------------
     var slideIndex = 1;
     showSlides(slideIndex);
 
