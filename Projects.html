@@ -12,14 +12,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <head>
-     <!-- probably other scripts here -->
-     <link rel="stylesheet" href="css/navbar.css">
-    
-     <!-- here is the library link -->
-     <script src="jquery-3.4.0.min.js"></script>
-     
-     <!-- below will go our script -->
-     <script src="scripts/navbar.js"></script>
+    <!-- probably other scripts here -->
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <!-- here is the library link -->
+    <script src="jquery-3.4.0.min.js"></script>
+
+    <!-- below will go our script -->
+    <script src="scripts/navbar.js"></script>
 </head>
 
 <style>
@@ -52,20 +52,20 @@
         text-transform: uppercase;
         text-align: center;
         width: 100%;
-        background-color: #fafafa;
+        background-color:#f75590;
         line-height: 100px;
         font-size: 15px;
+        color: white;
         z-index: 1000;
     }
 
     #me {
-
         font-size: 14px;
         text-align: left;
         line-height: 24px;
         text-size-adjust: 100%;
         -webkit-font-smoothing: antialiased;
-        background-color: #e8f1f0;
+        background-color: #ffffff;
         padding-top: 100px;
         padding-bottom: 100px;
 
@@ -99,7 +99,7 @@
         font-family: 'Montserrat', sans-serif;
         display: grid;
         grid-template-columns: auto auto auto;
-        background-color: #e8f1f0;
+        background-color: #ffffff;
         padding: 30px;
     }
 
@@ -107,18 +107,17 @@
         color: #333333;
         font-family: 'Montserrat', sans-serif;
         -webkit-font-smoothing: antialiased;
-        background-color: #e8f1f0;
-
+        background-color: #ffffff;
         padding: 20px;
         font-size: 15px;
         text-align: center;
     }
 
     #footer {
-        background: #fafafa;
+        background: #f75590;
         min-height: 50px;
         text-align: left;
-        color: #b1b1b1;
+        color: #fff;
         padding-top: 20px;
         font-size: 12px;
         line-height: 20px
@@ -147,7 +146,7 @@
         line-height: 24px;
         text-size-adjust: 100%;
         -webkit-font-smoothing: antialiased;
-        background-color: #f8e9e6;
+        background-color: #fbd87f;
         padding-top: 100px;
         padding-bottom: 150px;
 
@@ -168,6 +167,7 @@
         padding-top: 150px;
         padding-bottom: 50px;
         text-align: right;
+        
     }
 
     #resume {
@@ -182,7 +182,7 @@
     }
 
     #work {
-        background: #eee;
+        background: #fce4d8;
         height: auto;
         margin-top: -30px;
         text-align: center;
@@ -192,6 +192,7 @@
     }
 
     a {
+        text-emphasis: bold;
         color: #333;
     }
 
@@ -294,7 +295,7 @@
         padding-right: 30px;
         padding-top: 24px;
         width: 100%;
-        background: #fafafa;
+        background: #080808;
     }
 
     a.-webkit-any-link {
@@ -372,6 +373,128 @@
         width: 100vw;
         background-color: #D6EFFF;
     }
+
+    * {
+        box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    #slideme {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        font-size: 14px;
+        text-align: left;
+        line-height: 30px;
+        text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        background-color: #fbd87f;
+
+    }
 </style>
 
 </html>
@@ -395,7 +518,7 @@
         <!-- Header -->
         <div id="header">
             <div class="inner name">
-                <a href="#illustration">叶赐欢 | Chelsea Ip</a>
+                叶赐欢 | Chelsea Ip
             </div>
 
 
@@ -404,7 +527,7 @@
 
     <div id="illustration">
         <center>
-            <img src="images/heyyy.png" height= 400px width= 400px>
+            <img src="Images/Theatre Actor Portfolio Website.png">
         </center>
     </div>
 
@@ -428,11 +551,11 @@
                 others to do their best as well as increase the number of women in the block chain industry.
 
                 I enjoy working with people, as well as solving open ended problems.
-                 </p>
-            </center>
-                
-           
-           
+            </p>
+        </center>
+
+
+
     </div>
     <div id="resume">
         <div class="inner">
@@ -536,7 +659,8 @@
                         10,000 neurons and observe patterns of spikes.</li>
                     <li>Utilized Linear, Lasso, Ridge regression and artificial neural networks to predict burst origin
                         to avoid imbalanced data sets.</li>
-                    <li>Decision Tree (DT) and Support Vector Machine (SVM) were used to see if pre-burst precursor is predictive of burst initiation. </li>
+                    <li>Decision Tree (DT) and Support Vector Machine (SVM) were used to see if pre-burst precursor is
+                        predictive of burst initiation. </li>
                 </ul>
                 <span class="skill">Python</span>
                 <span class="skill">Machine Learning</span>
@@ -599,76 +723,87 @@
     </div>
     <br></br>
 
-    <div id="me">
-       
-            <p class="tagline">About Me</p>
-
-            <div class="grid-container">
-
-                <div class="grid-item">
-                    <center>
-                        <img src="images/outline_favorite_border_black_18dp.png">
-                    </center>
-                    <p><b>My Myres-Brigg Type Indicator(MBTI) is ISTP. </b><br/>
-                    I enjoy exploring ideas through creating,<br/>
-                    troubleshooting, trial and error<br/>
-                    and first-hand experience. The favorite type of  <br/>
-                    people I supposedly share my personality type with<br/>
-                    are Michael Jordan,Tom Cruise and James Bond.</p></div>
-               
-              
-                <div class="grid-item">
-                    <center>
-                        <img src="images/outline_face_black_18dp.png">
-                    </center>
-                    <p><b>In my free time, I like to....</b><br/>
-                    participate in cooking competitions, try new<br/>
-                    cuisines, explore creative ideas and meet <br/>
-                    new people through hackathons in Seattle! <br/>
-                    Check out some of my cooking tutorials <a  href = "https://www.instagram.com/hersavorytaste/" <br/>
-                    target <i>here!</i></a> <br/>
-                    </p></div>
-
-                <div class="grid-item">
-                    <center>
-                        <img src="images/outline_school_black_18dp.png">
-                    </center>
-                    <p><b>What got me into Computer Science </b><br/>
-                    was my curiousity for E-commerce Database Design.<br/>
-                    After processing orders back and forth, I <br/>
-                    quickly discovered the purpose of automating tasks to <br/>
-                    track inventory in my physical warehouse.<br/></p></div>
-                <div class="grid-item">
-                    <center>
-                        <img src="images/outline_school_black_18dp.png">
-                    </center>
-                    <p><b>My favorite programming language </b><br/>
-                    is Javascript.<br/>
-                    It started back in high school when I found a passion<br/>
-                    for selling apparel online. Lots of people <br/>
-                    are Michael Jordan,Tom Cruise and James Bond.</p></div>
-
-                    <div class="grid-item">
-                        <center>
-                            <img src="images/outline_school_black_18dp.png">
-                        </center>
-                            <p><b>What got me into Computer Science was </b><br/>
-                            my curiousity for E-commerce Database Design.<br/>
-                            It started back in high school when I found a passion<br/>
-                            for selling apparel online. Lots of people <br/>
-                            are Michael Jordan,Tom Cruise and James Bond.</p></div>
-
-                        <div class="grid-item">
-                            <center>
-                                <img src="images/outline_school_black_18dp.png">
-                            </center>
-                            <p><b>What got me into Computer Science? </b><br/>
-                            my curiousity for E-commerce Database Design.<br/>
-                            It started back in high school when I found a passion<br/>
-                            for selling apparel online. Lots of people <br/>
-                            are Michael Jordan,Tom Cruise and James Bond.</p></div>
+    <div id="slideme">
+        <center>
+            <p class="tagline">Projects</p>
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="Images/Humpback Whale Social Call Mascot.jpg" style="width:20%">
                 
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="Images/Red Sushi Logo.png" style="width:20%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="Images/UW.png" style="width:20%">
+                <div class="text">Caption Three</div>
+            </div>
+        </center>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <br>
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
     </div>
+    </div>
+
+
+    <div id="me">
+
+        <p class="tagline">About Me</p>
+
+        <div class="grid-container">
+
+            <div class="grid-item">
+                <center>
+                    <img src="images/outline_favorite_border_black_18dp.png">
+                </center>
+                <p><b>My Myres-Brigg Type Indicator(MBTI) is ISTP. </b><br />
+                    I enjoy exploring ideas through creating,<br />
+                    troubleshooting, trial and error<br />
+                    and first-hand experience. The favorite type of <br />
+                    people I supposedly share my personality type with<br />
+                    are Michael Jordan,Tom Cruise and James Bond.</p>
+            </div>
+
+
+            <div class="grid-item">
+                <center>
+                    <img src="images/outline_face_black_18dp.png">
+                </center>
+                <p><b>In my free time, I like to....</b><br />
+                    participate in cooking competitions, try new<br />
+                    cuisines, explore creative ideas and meet <br />
+                    new people through hackathons in Seattle! <br />
+                    Check out some of my cooking tutorials <a href="https://www.instagram.com/hersavorytaste/" <br />
+                    target <i>here!</i></a> <br />
+                </p>
+            </div>
+
+            <div class="grid-item">
+                <center>
+                    <img src="images/outline_school_black_18dp.png">
+                </center>
+                <p><b>What got me into Computer Science </b><br />
+                    was my curiousity for E-commerce Database Design.<br />
+                    After processing orders back and forth, I <br />
+                    quickly discovered the purpose of automating tasks to <br />
+                    track inventory in my physical warehouse.<br /></p>
+            </div>
+
+        </div>
     </div>
     </div>
     </div>
@@ -688,20 +823,51 @@
 </div>
 
 <script type="text/javascript">
-    $(document).ready(function(){
-    /* function called when you click of the button */
-    $("button").click(function(){
-        
-        /* this if else to change the text in the button */
-        if($("button").text() == "☰"){
-        $("button").text("🞬");
-        }else{
-            $("button").text("☰");
+
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
         }
-        
-        /* this function toggle the visibility of our "li" elements */
-        $("li").toggle("slow");
-        });
-    });
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 15000); // Change image every 2 seconds
+    }
+
 
 </script>
