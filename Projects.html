@@ -53,11 +53,11 @@
         text-transform: uppercase;
         text-align: center;
         width: 100%;
-        background-color:#f75590;
+        background-color: #e3c5cf;
         line-height: 100px;
         font-size: 15px;
-        color: white;
         z-index: 1000;
+        color:black;
     }
 
     #me {
@@ -66,9 +66,9 @@
         line-height: 24px;
         text-size-adjust: 100%;
         -webkit-font-smoothing: antialiased;
-        background-color: #ffffff;
-        padding-top: 100px;
-        padding-bottom: 100px;
+        background-color: #dd9fa3;
+        padding-top: 0px;
+        padding-bottom: 90px;
 
     }
 
@@ -101,7 +101,7 @@
         display: grid;
         grid-template-columns: auto auto auto;
         background-color: #ffffff;
-        padding: 30px;
+        padding: 130px;
     }
 
     .grid-item {
@@ -109,16 +109,16 @@
         font-family: 'Montserrat', sans-serif;
         -webkit-font-smoothing: antialiased;
         background-color: #ffffff;
-        padding: 20px;
+        padding: 50px;
         font-size: 15px;
         text-align: center;
     }
 
     #footer {
-        background: #f75590;
+        background: #e3c5cf;
         min-height: 50px;
-        text-align: left;
-        color: #fff;
+        text-align: center;
+        color: black;
         padding-top: 20px;
         font-size: 12px;
         line-height: 20px
@@ -139,18 +139,34 @@
         text-transform: uppercase;
     }
 
-    #about {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 14px;
-        padding: 155px;
+    #code {
+        margin-top: 50px; 
+        border-radius: 5px;
+        width: 750px;
+        margin: 0 auto;
+        padding-top: 15px;
+        font-size: 30px;
+        background: #ccc;
+        height: 700px;
+        font-family: 'Monaco', 'Courier New';
         text-align: left;
-        line-height: 24px;
-        text-size-adjust: 100%;
-        -webkit-font-smoothing: antialiased;
-        background-color: #fbd87f;
-        padding-top: 100px;
-        padding-bottom: 150px;
+        font-size: 13px;
+        color: #fafafa;
+    }
 
+
+    #console {
+        width: 750px;
+        padding: 40px;
+        height: 620px;
+        margin: 0 auto;
+        background: #383737;
+    }
+
+  
+
+    #resume .inner {
+        width: 700px;
     }
 
     li {
@@ -163,12 +179,16 @@
     }
 
     #illustration {
-
+        background-image: url("this.png");
         width: 100%;
-        padding-top: 150px;
-        padding-bottom: 50px;
-        text-align: right;
-        
+        height: 971px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat:none;
+        padding-bottom:150px;
+        padding-bottom: 1000px;
+        text-align: middle;
+    
     }
 
     #resume {
@@ -183,7 +203,7 @@
     }
 
     #work {
-        background: #fce4d8;
+        background: #ececec;
         height: auto;
         margin-top: -30px;
         text-align: center;
@@ -493,24 +513,24 @@
         line-height: 30px;
         text-size-adjust: 100%;
         -webkit-font-smoothing: antialiased;
-        background-color: #fbd87f;
+        background-color: #dbf3fa;
 
     }
-/* Lawrence added this start */
-#nav-symbol {
-    cursor: pointer;
-    padding: 2px;
-    position: absolute;
-    left: 86%;
-    top: 0%;
-}
+    /* Lawrence added this start */
+    #nav-symbol {
+        cursor: pointer;
+        padding: 2px;
+        position: absolute;
+        left: 93%;
+        top: 30%;
+    }
 
-.line {
-    background-color: white;
-    height: 3px;
-    margin: 5px;
-    width: 26px;
-}
+    .line {
+        background-color: white;
+        height: 3px;
+        margin: 5px;
+        width: 26px;
+    }
 
     .slide-right {
         right: 0;
@@ -519,6 +539,109 @@
     .slide-left {
         right: -200px;
     }
+
+    /* Animation */
+
+    @keyframes fadeInUp {
+        from {
+            transform: translate3d(0,60px,0)
+        }
+
+        to {
+            transform: translate3d(0,0,0);
+            opacity: 1
+        }
+    }
+
+    @-webkit-keyframes fadeInUp {
+        from {
+            transform: translate3d(0,60px,0)
+        }
+
+        to {
+            transform: translate3d(0,0,0);
+            opacity: 1
+        }
+    }
+
+    .animated {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-fill-mode: both
+    }
+
+    .animatedFadeInUp {
+        opacity: 0;
+    }
+
+    .fadeInUp {
+        opacity: 0;
+        animation-name: fadeInUp;
+        -webkit-animation-name: fadeInUp;
+    }
+
+    .headerIcons {
+        width: 90px;
+        height: 90px;
+        margin: 15px 10px 5px 15px;
+    }
+
+    #socialmedia {
+        text-align: center;
+        margin-bottom:25px;
+    }
+
+    img, svg {
+        vertical-align: middle;
+    }
+
+    #summary {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        padding: 155px;
+        text-align: left;
+        line-height: 24px;
+        text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        background-color: #ffffff;
+        padding-top: 100px;
+        padding-bottom: 450px;
+
+    }
+
+    #contact {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        padding: 155px;
+        text-align: left;
+        line-height: 24px;
+        text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        background-color: #fbf4b5;
+        padding-top: 100px;
+        padding-bottom: 50px;
+
+    }
+
+    #about {
+        /* background-color: #D57878; */
+        background-color: #ebecf0;
+        height: 1020px;
+        margin-top: -30px;
+    }
+
+    #about p {
+        text-align: center;
+        padding-top: 60px;
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 0.3em;
+        font-weight: 700;
+        color: #181616;
+        font-size: 11px;
+        text-transform: uppercase;
+    }
+
 
     /* end */
 </style>
@@ -533,7 +656,7 @@
             <span>&#9776;</span>
         </a>
         <ul id="toc" class="toc slide-right">
-            <li class="toc-h1"><a href="#about">Summary</a></li>
+            <li class="toc-h1"><a href="#code">Summary</a></li>
             <li class="toc-h1"><a href="#resume">Résumé</a></li>
             <li class="toc-h1"><a href="#me">About Me</a></li>
         </ul>
@@ -557,36 +680,91 @@
     </div>
 
     <div id="illustration">
-        <center>
-            <img src="Images/Theatre Actor Portfolio Website.png">
-        </center>
-    </div>
 
+        <div id="socialmedia">
+            <a href="https://www.facebook.com/chelsea.ith">
+                <img class ="headerIcons" src="Images/FB.png">
+            </a>
+            <a href="https://www.linkedin.com/in/ipchelsea/">
+                <img class ="headerIcons" src="Images/linkedin.png">
+            </a>
+            <a href="https://www.linkedin.com/in/ipchelsea/">
+                <img class ="headerIcons" src="Images/twitter.png">
+            </a>
+            <a href="mailto:chels98@uw.edu">
+                <img class ="headerIcons" src="Images/google.png">
+            </a>
+        </div>
+    </div>
 
     <!-- About Section -->
     <div id="about">
-        <p class="tagline">Summary</p>
-        <center>
-            <p>
-                A rising senior from University of Washington regarded for
-                experience in project development with a
-                focus on software engineering, designing and developing business applications. Exemplary qualifications,
-                with internship experience as a back-end engineer and mobile application developer.
-                After graduation, I will be working at ADP full time as a software developer.
+        <div class="inner">
+            <p> Hello, I am a software engineer!</p>
+            <br>
+            <br>
+            <br>
+            <div id="code">
+                <div id = "console">
+                                > Chelsea.origin
+                <br>
+                <span class="answer">
+                    &nbsp;&nbsp;=> Sabah, Malaysia
+                <br>
+                <br>
+                </span>
+                                > Chelsea.education
+                <br>
+                <span class="answer">
+                    &nbsp;&nbsp;=> University of Washington
+                <br>
+                <br>
+                </span>
+                                > Chelsea.graduation
 
-                At University of Washington, I serve as a tri campus vice president for UW Block chain where I develop,
-                organize, and lead Computer Science outreach efforts. My main focus is business strategy
-                - where I explore
-                methods with Fortune 500 companies to provide students, resources for weekly panelist talks,
-                conferences, hackathons, and business events. Through this role, I am able to empower
-                others to do their best as well as increase the number of women in the block chain industry.
+                <br>
+                <span class="answer">
+                    &nbsp;&nbsp;=> June, 2020
+                <br>
+                <br>
+                </span>
+                                    > Chelsea.interests
 
-                I enjoy working with people, as well as solving open ended problems.
-            </p>
-        </center>
+                <br>
+                <span class="answer">
+                    &nbsp;&nbsp;=> ["Machine Learning", "Product Design", "Program Management", "UX Research"]
+                <br>
+                <br>
+                </span>
+                                    > Chelsea.latestExperience
 
+                <br>
+                <span class="answer">
+                    &nbsp;&nbsp;=> UW Blockchain Hacks Director
+                <br>
+                <br>
+                </span>
+                                    > Chelsea.resume
 
-
+                <br>
+                <span class="answer">
+                    &nbsp;&nbsp;=>  <a target="_blank" href="CResume.pdf">Chelsea.pdf</a>
+                    
+                    <br>
+                    <br>
+                </span>
+                        
+        
+        
+                </div>
+                    <center>
+                        <p>
+                        
+                        </p>
+                    </center>
+                </div>    
+        </div>
+        </div>
     </div>
     <div id="resume">
         <div class="inner">
@@ -756,7 +934,7 @@
 
     <div id="slideme">
         <center>
-            <p class="tagline">Projects</p>
+            <p class="tagline">Featured Software Development Projects</p>
             <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
                 <img src="Images/Humpback Whale Social Call Mascot.jpg" style="width:20%">
@@ -772,7 +950,6 @@
             <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
                 <img src="Images/UW.png" style="width:20%">
-                <div class="text">Caption Three</div>
             </div>
         </center>
         <!-- Next and previous buttons -->
@@ -785,6 +962,8 @@
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
 
     </div>
@@ -792,7 +971,7 @@
 
 
     <div id="me">
-
+        <br></br>
         <p class="tagline">About Me</p>
 
         <div class="grid-container">
@@ -835,19 +1014,21 @@
             </div>
 
         </div>
+        <div id ="contact" color="white">
+            <p class="tagline">Contact me</p>
+            <img src="Images/online.png" width="600px";
+    
+         </div>
     </div>
     </div>
     </div>
 
-
+    
+     
     <!-- Footer Section -->
     <div id="footer">
         <div class="inner">
-            Made with <3 by Chelsea Ip 2020 <span class="right">
-                <a target="_blank" href="mailto:chels98@uw.edu">Email</a>&nbsp;
-                <a target="_blank" href="https://github.com/ipchelsea">GitHub</a>&nbsp;
-                <a target="_blank" href="https://www.linkedin.com/in/ipchelsea/">LinkedIn</a>&nbsp;&nbsp;
-                </span>
+                            Made with <3 by Chelsea Ip 2020 <span class="center">
         </div>
     </div>
 </body>
@@ -905,7 +1086,7 @@
         slideIndex++;
         if (slideIndex > slides.length) { slideIndex = 1 }
         slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 15000); // Change image every 2 seconds
+        setTimeout(showSlides, 10000); // Change image every 2 seconds
     }
 
 
